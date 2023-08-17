@@ -52,12 +52,7 @@ export function Home() {
           className="quote"
           style={{ color: currentQuote.color }}
         />
-        <span
-          id="text"
-          className="text"
-          key={currentQuote.index}
-          style={{ color: currentQuote.color }}
-        >
+        <span id="text" className="text" style={{ color: currentQuote.color }}>
           {currentQuote.title}
         </span>
         <div
@@ -81,14 +76,13 @@ export function Home() {
             </a>
           </div>
           <div className="btns-2">
-            <a id="new-quote">
-              <button
-                onClick={changeQuote}
-                style={{ backgroundColor: currentQuote.color }}
-              >
-                New Quote
-              </button>
-            </a>
+            <button
+              id="new-quote"
+              onClick={changeQuote}
+              style={{ backgroundColor: currentQuote.color }}
+            >
+              New Quote
+            </button>
           </div>
         </div>
       </div>
