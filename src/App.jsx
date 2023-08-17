@@ -1,7 +1,7 @@
 // import { useState } from "react";
 
 import "./App.css";
-import { Home } from "./assets/Home/home";
+import { Home } from "./Home/home";
 
 function App() {
   // const [count, setCount] = useState(0);
